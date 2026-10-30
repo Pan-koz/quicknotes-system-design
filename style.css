@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+:root { font-family: system-ui, sans-serif; color: #172033; background: #f4f7fb; }
+body { margin: 0; line-height: 1.5; }
+.container { width: min(900px, calc(100% - 2rem)); margin: auto; padding: 2rem 0 4rem; }
+header { margin-bottom: 1.5rem; } h1 { margin: .1rem 0; font-size: clamp(2rem, 5vw, 3rem); }
+.eyebrow { color: #3159a6; font-weight: 700; text-transform: uppercase; font-size: .8rem; }
+.panel { background: white; border: 1px solid #dce3ee; border-radius: 14px; padding: 1.25rem; margin: 1rem 0; }
+button { border: 0; border-radius: 8px; padding: .7rem 1rem; background: #2457c5; color: white; font: inherit; font-weight: 650; cursor: pointer; }
+button:disabled { opacity: .6; cursor: wait; }
+label { display: block; font-weight: 650; margin: 1rem 0 .35rem; }
+input, textarea { display: block; width: 100%; border: 1px solid #b9c5d8; border-radius: 8px; padding: .7rem; font: inherit; }
+small { display: block; color: #66738a; margin-top: .25rem; }
+.status { padding: .7rem .85rem; border-radius: 8px; background: #eef2f8; color: #334155; }
+.status.success { background: #e7f8ee; color: #17663a; }
+.status.error { background: #fff0f0; color: #a52323; }
+#notes-list { list-style: none; padding: 0; }
+.note { border: 1px solid #e0e6ef; border-radius: 10px; padding: 1rem; margin: .75rem 0; overflow-wrap: anywhere; }
+.note h3 { margin: 0 0 .4rem; } .note p { white-space: pre-wrap; color: #4b5870; }
+.note .delete-btn { background: #a62929; } .empty { color: #66738a; font-style: italic; }
